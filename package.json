@@ -10,7 +10,8 @@
     "lint": "standard",
     "format": "prettier-standard --format",
     "test": "jest --coverage",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "generate": "plop"
   },
   "keywords": [],
   "author": {
@@ -34,6 +35,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
     "jest": "^26.0.1",
+    "plop": "^2.7.1",
     "prettier-standard": "^16.3.0",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
@@ -46,7 +48,7 @@
     "standard": "^14.3.3",
     "standard-prettier": "^1.0.1",
     "styled-components": "^5.1.1",
-    "ts-jest": "^25.5.1",
+    "ts-jest": "^26.0.0",
     "ts-loader": "^7.0.3",
     "typescript": "^3.8.3"
   },
