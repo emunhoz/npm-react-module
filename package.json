@@ -1,6 +1,6 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
+  "name": "@emunhoz/components",
+  "version": "1.0.1",
   "description": "Component Library",
   "main": "build/index.js",
   "module": "build/index.es.js",
