@@ -1,0 +1,31 @@
+import {Meta, Story, Preview, Props} from '@storybook/addon-docs/blocks'
+
+import { Button, IButton } from './Button'
+
+<Meta title="Components|Button" component={Button} />
+
+# Button
+
+This is the primary `Button`
+
+```jsx
+import { Button } from '@emunhoz/Button'
+```
+
+<Preview withSource="open">
+  <Story name="Primary">
+    <Button>John</Button>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Button} />
+
+## Negative
+
+<Preview withSource="open">
+  <Story name="Negative">
+    <Button negative>Frances</Button>
+  </Story>
+</Preview>
