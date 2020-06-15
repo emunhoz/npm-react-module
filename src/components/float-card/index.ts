@@ -1,3 +1,1 @@
-import { FloatCard } from './FloatCard';
-
-export default FloatCard;
+export * from './FloatCard'
