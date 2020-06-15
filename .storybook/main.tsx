@@ -3,6 +3,6 @@ module.exports = {
   addons: [
     '@storybook/addon-docs',
     '@storybook/addon-viewport',
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
   ]
 }
