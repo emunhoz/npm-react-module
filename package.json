@@ -49,8 +49,14 @@
     "standard-prettier": "^1.0.1",
     "styled-components": "^5.1.1",
     "ts-jest": "^26.0.0",
-    "ts-loader": "^7.0.3",
-    "typescript": "^3.8.3"
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.8.3",
+    "stylelint": "13.6.0",
+    "stylelint-config-prettier": "8.0.1",
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-config-twbs-bootstrap": "2.0.3",
+    "stylelint-processor-styled-components": "1.10.0"
   },
   "peerDependencies": {
     "react": "^16",
