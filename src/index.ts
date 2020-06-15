@@ -1,3 +1,5 @@
+export { ThemeProvider } from 'styled-components'
+export { default as theme, GlobalStyles } from './theme'
 export * from './components/button'
 export * from './components/float-card'
 export * from './components/square-button'
