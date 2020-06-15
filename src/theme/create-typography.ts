@@ -35,7 +35,7 @@ const createTypography = (typography: TypographyInput): Typography => {
 
   return {
     fontFamily,
-    fontSizeXXL: px(36),
+    fontSizeXXL: px(40),
     fontSizeXL: px(32),
     fontSizeL: px(28),
     fontSizeML: px(24),
