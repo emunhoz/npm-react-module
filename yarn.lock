@@ -2108,7 +2108,7 @@
     dom-accessibility-api "^0.4.5"
     pretty-format "^25.5.0"
 
-"@testing-library/jest-dom@^5.7.0":
+"@testing-library/jest-dom@^5.10.1":
   version "5.10.1"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.10.1.tgz#6508a9f007bd74e5d3c0b3135b668027ab663989"
   integrity sha512-uv9lLAnEFRzwUTN/y9lVVXVXlEzazDkelJtM5u92PsGkEasmdI+sfzhZHxSDzlhZVTrlLfuMh2safMr8YmzXLg==
@@ -2123,7 +2123,7 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@^10.0.4":
+"@testing-library/react@^10.2.1":
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-10.2.1.tgz#f0c5ac9072ad54c29672150943f35d6617263f26"
   integrity sha512-pv2jZhiZgN1/alz1aImhSasZAOPg3er2Kgcfg9fzuw7aKPLxVengqqR1n0CJANeErR1DqORauQaod+gGUgAJOQ==
@@ -2274,18 +2274,10 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*":
+"@types/jest@*", "@types/jest@^26.0.0":
   version "26.0.0"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.0.tgz#a6d7573dffa9c68cbbdf38f2e0de26f159e11134"
   integrity sha512-/yeMsH9HQ1RLORlXAwoLXe8S98xxvhNtUz3yrgrwbaxYjT+6SFPZZRksmRKRA6L5vsUtSHeN71viDOTTyYAD+g==
-  dependencies:
-    jest-diff "^25.2.1"
-    pretty-format "^25.2.1"
-
-"@types/jest@^25.2.1":
-  version "25.2.3"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.2.3.tgz#33d27e4c4716caae4eced355097a47ad363fdcaf"
-  integrity sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
@@ -13926,7 +13918,7 @@ ts-dedent@^1.1.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-1.1.1.tgz#68fad040d7dbd53a90f545b450702340e17d18f3"
   integrity sha512-UGTRZu1evMw4uTPyYF66/KFd22XiU+jMaIuHrkIHQ2GivAXVlLV0v/vHrpOuTRf9BmpNHi/SO7Vd0rLu0y57jg==
 
-ts-jest@^26.0.0:
+ts-jest@^26.1.0:
   version "26.1.0"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.1.0.tgz#e9070fc97b3ea5557a48b67c631c74eb35e15417"
   integrity sha512-JbhQdyDMYN5nfKXaAwCIyaWLGwevcT2/dbqRPsQeh6NZPUuXjZQZEfeLb75tz0ubCIgEELNm6xAzTe5NXs5Y4Q==

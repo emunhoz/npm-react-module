@@ -17,7 +17,11 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "test-utils": ["./utils/test-utils"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "build"]
