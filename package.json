@@ -1,6 +1,6 @@
 {
   "name": "@emunhoz/components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Component Library",
   "main": "build/index.js",
   "module": "build/index.es.js",
