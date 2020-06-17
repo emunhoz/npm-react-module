@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { render } from 'test-utils'
-import SquareButton from '../';
+import { SquareButton } from '../';
 
 describe('[Component]: SquareButton', () => {
   it('render the component', () => {

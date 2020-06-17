@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'test-utils'
-import FloatCard from '../'
+import { FloatCard } from '../'
 
 describe('Component: FloatCard', () => {
   it('render the component', () => {

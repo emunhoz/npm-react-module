@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'test-utils'
-import Title from '..';
+import { Title } from '..';
 
 describe('[Component]: Title', () => {
   it('render the component', () => {
