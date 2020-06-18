@@ -1,32 +1,29 @@
 import styled, { css } from 'styled-components'
 
 const NegativeStyle = css`
-  color: #0086FF;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(155, 155, 155, .2);
+  color: ${({ theme }) => theme.palette.black};
+  background: ${({ theme }) => theme.palette.white};
+  box-shadow: 0 0 46px 0 rgba(0, 0, 0, .13);
 
   :hover {
-    color: #fff;
-    background: #0086FF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .13);
   }
 `
 
 export const Button = styled.button<{ negative: boolean;}>`
-  box-sizing: border-box;
-  width: 348px;
-  height: 50px;
-  color: #fff;
-  text-transform: uppercase;
+  min-width: 320px;
+  padding: 24px 40px;
+  font-size: ${({ theme }) => theme.typography.fontSizeSM};
+  font-weight: ${({ theme }) => theme.typography.fontWeightMedium};
+  color: ${({ theme }) => theme.palette.white};
   cursor: pointer;
   background: ${({ theme }) => theme.palette.primary};
-  border: 1px solid #4B83F9;
-  border-radius: 25px;
-  box-shadow: 0 -2px 15px rgba(0, 115, 219, .2);
+  border: none;
+  border-radius: ${({ theme }) => theme.attributes.borderRadius};
   transition: .3s;
 
   :hover {
-    color: #4B83F9;
-    background: #fff;
+    filter: brightness(150%);
   }
 
   ${({ negative }) => negative && NegativeStyle};
