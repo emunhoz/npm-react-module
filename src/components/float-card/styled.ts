@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 const BlockStyle = css`
-  max-width: 100%
+  max-width: 100%;
 `
 
 export const FloatCard = styled.div<{ block?: boolean }>`
@@ -11,11 +11,11 @@ export const FloatCard = styled.div<{ block?: boolean }>`
   max-width: 233px;
   padding: 55px 20px 20px;
   font-size: ${({ theme }) => theme.typography.fontSizeSM};
-  line-height: 21px;
-  color: ${({ theme }) => theme.palette.primary};
-  background: #fff;
+  line-height: 24px;
+  color: ${({ theme }) => theme.palette.black};
+  background: ${({ theme }) => theme.palette.white};
   border-radius: 9px;
-  box-shadow: 1px 5px 20px rgba(0, 0, 0, .2);
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
 
   ${({ block }) => block && BlockStyle};
 `
@@ -33,5 +33,11 @@ export const BoxIcon = styled.div`
   margin: 0 auto;
   background: #fff;
   border-radius: 9px;
-  box-shadow: 1px 5px 20px rgba(0, 0, 0, .2);
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+`
+
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  padding: 12px;
 `

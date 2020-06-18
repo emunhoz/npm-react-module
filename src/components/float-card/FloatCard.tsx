@@ -15,7 +15,7 @@ interface IFloatCard {
 export const FloatCard: React.FC<IFloatCard> = ({ imgUrl, children, block = false }) => (
   <S.FloatCard block={block}>
     <S.BoxIcon>
-      <img src={imgUrl} alt="icon" />
+      <S.Img src={imgUrl} alt="icon" />
     </S.BoxIcon>
     {children}
   </S.FloatCard>

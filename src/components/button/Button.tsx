@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as S from './styled'
 
 interface IButton {
-  children?: React.ReactNode;
+  children?: React.ReactNode
   onClick: () => void
 
   /**
@@ -14,5 +14,7 @@ interface IButton {
 }
 
 export const Button: React.FC<IButton> = ({ children, onClick, negative = false, ...rest }) => (
-  <S.Button onClick={onClick} negative={negative} {...rest}>{children}</S.Button>
+  <S.Button onClick={onClick} negative={negative} {...rest}>
+    {children}
+  </S.Button>
 )
