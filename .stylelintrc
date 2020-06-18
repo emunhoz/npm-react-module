@@ -17,6 +17,7 @@
     'value-no-vendor-prefix': null,
     'property-no-vendor-prefix': null,
     'declaration-block-trailing-semicolon': null,
-    'string-quotes': "single"
+    'string-quotes': "single",
+    'number-leading-zero': null
   }
 }
