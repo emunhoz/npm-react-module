@@ -1,5 +1,4 @@
 export interface Typography {
-  fontFamily: string;
   fontSizeXXS: string;
   fontSizeXS: string;
   fontSizeS: string;
@@ -20,21 +19,15 @@ export type TypographyInput = { +readonly [K in keyof Typography]+?: Typography[
   htmlFontSize?: number;
 };
 
-const createTypography = (typography: TypographyInput): Typography => {
-  const {
-    fontFamily = 'HelveticaNeue, "Helvetica Neue", "Open Sans", sansSerif',
-
-    /* weights */
-    fontWeightNormal = 400,
-    fontWeightMedium = 500,
-    fontWeightLight = 300,
-    fontWeightBold = 700,
-  } = typography;
-
+const createTypography = ({
+  fontWeightLight = 300,
+  fontWeightNormal = 400,
+  fontWeightMedium = 600,
+  fontWeightBold = 700
+}: TypographyInput): Typography => {
   const px = (size: number) => `${size}px`;
 
   return {
-    fontFamily,
     fontSizeXXL: px(40),
     fontSizeXL: px(32),
     fontSizeL: px(28),

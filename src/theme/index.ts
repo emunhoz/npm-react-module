@@ -1,9 +1,11 @@
 import createPalette, { Palette, PaletteInput } from './create-palette';
 import createTypography, { Typography, TypographyInput } from './create-typography';
+import attributes, { Attributes } from './attributes';
 
 export interface Theme {
   palette: Palette;
   typography: Typography;
+  attributes: Attributes;
 }
 
 export interface ThemeInput {
@@ -20,6 +22,7 @@ export const createTheme = (options: ThemeInput): Theme => {
   return {
     palette,
     typography,
+    attributes
   };
 };
 
