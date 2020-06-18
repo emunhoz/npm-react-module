@@ -2,13 +2,7 @@ import * as React from 'react'
 import * as S from './styled'
 
 interface I{{pascalCase name}} {
-  /**
-   * Interface for component
-   */
+  example?: string
 }
 
-export const {{pascalCase name}}: React.FC<I{{pascalCase name}}> = () => (
-  <S.{{pascalCase name}}>
-    My new {{pascalCase name}} component
-  </S.{{pascalCase name}}>
-)
+export const {{pascalCase name}}: React.FC<I{{pascalCase name}}> = ({ example = 'example' }) => <S.{{pascalCase name}}>My new {{pascalCase name}} component {example}</S.{{pascalCase name}}>
