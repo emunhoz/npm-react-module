@@ -1,4 +1,4 @@
-# Components
+# Components  ![CI](https://github.com/emunhoz/components/workflows/CI/badge.svg)
 
 Component library module.
 
