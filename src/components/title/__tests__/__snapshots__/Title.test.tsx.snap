@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <h1
-        class="sc-AxjAm gbOfeM"
+        class="sc-AxjAm bgtiIP"
         color=""
       >
         Hello world
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <h1
-      class="sc-AxjAm gbOfeM"
+      class="sc-AxjAm bgtiIP"
       color=""
     >
       Hello world
@@ -156,7 +156,7 @@ Object {
   "baseElement": <body>
     <div>
       <h1
-        class="sc-AxjAm dnWlwE"
+        class="sc-AxjAm jHWYzD"
         color=""
       >
         Hello world
@@ -165,7 +165,7 @@ Object {
   </body>,
   "container": <div>
     <h1
-      class="sc-AxjAm dnWlwE"
+      class="sc-AxjAm jHWYzD"
       color=""
     >
       Hello world

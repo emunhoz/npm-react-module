@@ -4,6 +4,8 @@ export interface Palette {
   white: string
   black: string
   lightGray: string
+  error: string
+  lightError: string
 }
 
 export type PaletteInput = {
@@ -16,12 +18,16 @@ const createPalette = ({
   white = '#fff',
   black = '#1f1f25',
   lightGray = '#f4f4f4',
+  error = '#ff6e6e',
+  lightError = '#ff6e6e',
 }: PaletteInput): Palette => ({
   primary,
   secondary,
   white,
   black,
   lightGray,
+  error,
+  lightError,
 })
 
 export default createPalette

@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { Input, IInput } from './Input'
+
+<Meta title="Components|Input" component={ Input } />
+
+# Input
+
+This is the `Input`
+
+```jsx
+import Input from '@emunhoz/Input'
+```
+
+<Preview withSource="open">
+  <Story name="Primary">
+    <Input id="nome" value="John Doe" placeholder="Name" label="Nome" onChange={e => e.target.value} />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={ Input } />
+
+## Error styled
+
+<Preview withSource="open">
+  <Story name="Error">
+    <Input id="nome-erro" value="John Doe" error="Something went wrong" placeholder="Name" label="Nome" onChange={e => e.target.value} />
+  </Story>
+</Preview>
