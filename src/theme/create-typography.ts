@@ -1,31 +1,31 @@
 export interface Typography {
-  fontSizeXXS: string;
-  fontSizeXS: string;
-  fontSizeS: string;
-  fontSizeSM: string;
-  fontSizeM: string;
-  fontSizeML: string;
-  fontSizeL: string;
-  fontSizeXL: string;
-  fontSizeXXL: string;
-  fontWeightNormal: number;
-  fontWeightMedium: number;
-  fontWeightLight: number;
-  fontWeightBold: number;
+  fontSizeXXS: string
+  fontSizeXS: string
+  fontSizeS: string
+  fontSizeSM: string
+  fontSizeM: string
+  fontSizeML: string
+  fontSizeL: string
+  fontSizeXL: string
+  fontSizeXXL: string
+  fontWeightNormal: number
+  fontWeightMedium: number
+  fontWeightLight: number
+  fontWeightBold: number
 }
 
 export type TypographyInput = { +readonly [K in keyof Typography]+?: Typography[K] } & {
-  fontSize?: number;
-  htmlFontSize?: number;
-};
+  fontSize?: number
+  htmlFontSize?: number
+}
 
 const createTypography = ({
   fontWeightLight = 300,
   fontWeightNormal = 400,
   fontWeightMedium = 600,
-  fontWeightBold = 700
+  fontWeightBold = 700,
 }: TypographyInput): Typography => {
-  const px = (size: number) => `${size}px`;
+  const px = (size: number) => `${size}px`
 
   return {
     fontSizeXXL: px(40),
@@ -41,7 +41,7 @@ const createTypography = ({
     fontWeightMedium,
     fontWeightLight,
     fontWeightBold,
-  };
-};
+  }
+}
 
-export default createTypography;
+export default createTypography
