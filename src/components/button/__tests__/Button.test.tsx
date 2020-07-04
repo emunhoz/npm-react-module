@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent } from 'test-utils'
+import { render, fireEvent, screen } from 'test-utils'
 import { Button } from '../'
 
 describe('[Component]: Button', () => {
@@ -20,9 +20,10 @@ describe('[Component]: Button', () => {
   })
 
   it('should trigger function when button is pressed', async () => {
-    const { getByText } = render(<Button onClick={mockOnClickFunction}>Hello world</Button>)
+    render(<Button onClick={mockOnClickFunction}>Hello world</Button>)
 
-    fireEvent.click(getByText('Hello world'))
+    fireEvent.click(screen.getByText('Hello world'))
+
     expect(mockOnClickFunction).toHaveBeenCalled()
   })
 })
