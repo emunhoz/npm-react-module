@@ -14,7 +14,7 @@
     "test:watch": "jest --watch",
     "test:ci": "npm run test --coverage",
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -o .public",
+    "deploy-storybook": "storybook-to-ghpages",
     "generate": "plop"
   },
   "keywords": [],
@@ -30,6 +30,7 @@
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.2.1",
     "@types/jest": "^26.0.0",
