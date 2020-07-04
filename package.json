@@ -15,7 +15,7 @@
     "test:ci": "npm run test --coverage",
     "storybook": "start-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "generate": "plop"
+    "generate:component": "plop"
   },
   "keywords": [],
   "author": {
