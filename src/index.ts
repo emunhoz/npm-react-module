@@ -1,6 +1,4 @@
 export { ThemeProvider } from 'styled-components'
-export { default as theme, GlobalStyles } from './theme'
+export { default as theme, GlobalStyles } from './styles'
+
 export * from './components/button'
-export * from './components/float-card'
-export * from './components/title'
-export * from './components/input'

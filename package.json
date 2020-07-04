@@ -1,6 +1,6 @@
 {
-  "name": "@emunhoz/components",
-  "version": "1.0.6-development",
+  "name": "@your-name/components",
+  "version": "1.0.0",
   "description": "Component Library",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -12,16 +12,16 @@
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:watch": "jest --watch",
-    "test:ci": "yarn test --coverage",
+    "test:ci": "npm run test --coverage",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o .public",
     "generate": "plop"
   },
   "keywords": [],
   "author": {
-    "name": "Eder Munhoz dos Santos",
-    "email": "edermunhozsantos@gmail.com",
-    "url": "https://edermunhozsantos.com"
+    "name": "Your Name",
+    "email": "your_email@email.com",
+    "url": "https://yourwebsite.com"
   },
   "license": "MIT",
   "devDependencies": {

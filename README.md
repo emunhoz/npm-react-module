@@ -1,26 +1,64 @@
-# Components  ![CI](https://github.com/emunhoz/components/workflows/CI/badge.svg)
+## Template for NPM React Module + TypeScript
 
-Component library module.
+#### About
 
-## Usage
+A simple boilerplate to start building your own react library
 
-To install dependencies
-``` 
-$ yarn install
-```
+## 🚀 Quick Start
 
-To build
-```
-$ yarn build 
-```
+1. Install all dependencies
 
-To run tests
-```
-$ yarn test
-```
+   ```shell
+   npm i
+   ```
+2. Show and build your components at `http://localhost:61622/`
 
-To run Storybook
-``` 
-$ yarn storybook
-```
+   ```shell
+   npm run storybook
+   ```
 
+What's included?
+
+- [x] React
+- [x] Typescript
+- [x] Styled components with ThemeProvider 💅
+- [x] Storybook with MDX Syntax
+- [x] Testing library/react (Setup working with ThemeProvider)
+
+## 🌎 Publishing
+
+To publish your package to npm:
+
+_Remember to rename `"name": "@your-name/components",` with your package name in `package.json`_
+
+1.  Make sure you're logged in your npm account
+    ```shell
+    npm login
+    ```
+
+2. Compile your package
+    ```shell
+    npm run build
+    ```
+
+3. Update the package version
+    ```shell
+    npm version [patch | minor | major]
+    ```
+
+4. Publish your package
+    ```shell
+    npm publish
+    ```
+
+## 🚨 Code standard
+
+- [JavaScript Standard Style](https://standardjs.com/) - Javascript styleguide
+- [Prettier](https://prettier.io/) - Code formatter
+- [ESLint](https://eslint.org/) - Lint to quickly find problems
+- [Stylelint](https://stylelint.io/) - A mighty, modern linter that helps you avoid errors and enforce conventions in your styles
+
+## 🚥 Testing
+
+- [Jest](https://jestjs.io/) - A delightful JavaScript Testing Framework with a focus on simplicity
+- [Testing Library](https://testing-library.com/) - Simple and complete testing utilities that encourage good testing practices

@@ -3,7 +3,7 @@ export type Attributes = {
 }
 
 const attributes: Attributes = {
-  borderRadius: '20px'
+  borderRadius: '20px',
 }
 
 export default attributes
