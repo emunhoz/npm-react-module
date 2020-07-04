@@ -50,6 +50,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "git-commit-msg-linter": "^2.4.4",
     "jest": "^26.0.1",
     "plop": "^2.7.1",
     "prettier": "^2.0.5",
