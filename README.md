@@ -27,8 +27,6 @@ What's included?
 
 ## 🌎 Publishing
 
-To publish your package to npm:
-
 _Remember to rename `"name": "@your-name/components",` with your package name in `package.json`_
 
 1.  Make sure you're logged in your npm account
@@ -62,3 +60,11 @@ _Remember to rename `"name": "@your-name/components",` with your package name in
 
 - [Jest](https://jestjs.io/) - A delightful JavaScript Testing Framework with a focus on simplicity
 - [Testing Library](https://testing-library.com/) - Simple and complete testing utilities that encourage good testing practices
+
+### Others commands
+
+`npm run generate:component` to create a component folder structure
+
+`npm run test:ci` to run test code coverage
+
+`npm run deploy-storybook` publish your storybook github pages
