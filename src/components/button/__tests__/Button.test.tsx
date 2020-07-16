@@ -19,7 +19,7 @@ describe('[Component]: Button', () => {
     ).toMatchSnapshot()
   })
 
-  it('should trigger function when button is pressed', async () => {
+  it('should trigger function when button is pressed', () => {
     render(<Button onClick={mockOnClickFunction}>Hello world</Button>)
 
     fireEvent.click(screen.getByText('Hello world'))

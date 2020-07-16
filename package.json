@@ -17,6 +17,14 @@
     "deploy-storybook": "storybook-to-ghpages",
     "generate:component": "plop"
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "keywords": [],
   "author": {
     "name": "Your Name",
