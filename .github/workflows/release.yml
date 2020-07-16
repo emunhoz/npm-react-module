@@ -1,8 +1,13 @@
 name: Semantic release
 
-on: push
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-  publish:
+  release:
+    name: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
