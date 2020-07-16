@@ -107,5 +107,8 @@
       "afterAll",
       "jest"
     ]
+  },
+  "dependencies": {
+    "storybook-npm": "^1.1.1"
   }
 }
