@@ -29,6 +29,9 @@
     "@semantic-release/git"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/addon-a11y": "^5.3.18",
