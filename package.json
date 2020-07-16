@@ -1,5 +1,5 @@
 {
-  "name": "@your-name/components",
+  "name": "@user-your-name-example/components",
   "version": "0.0.0-development",
   "description": "Component Library",
   "main": "dist/index.js",
