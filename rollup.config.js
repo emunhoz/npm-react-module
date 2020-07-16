@@ -30,35 +30,23 @@ export default {
         'react-dom': 'ReactDOM',
         'styled-components': 'styled',
       },
-    }
+    },
   ],
   plugins: [
     external(),
     resolve(),
     typescript({
       rollupCommonJSResolveHack: true,
-      exclude: [
-        '**/__tests__/**',
-        '**/*.stories.tsx'
-      ],
-      clean: true
+      exclude: ['**/__tests__/**', '**/*.stories.tsx'],
+      clean: true,
     }),
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'node_modules/react/react.js': [
-          'Children',
-          'Component',
-          'PropTypes',
-          'createElement'
-        ],
+        'node_modules/react/react.js': ['Children', 'Component', 'PropTypes', 'createElement'],
         'node_modules/react-dom/index.js': ['render', 'hydrate'],
-        'node_modules/react-is/index.js': [
-          'isElement',
-          'isValidElementType',
-          'ForwardRef'
-        ]
-      }
-    })
-  ]
+        'node_modules/react-is/index.js': ['isElement', 'isValidElementType', 'ForwardRef'],
+      },
+    }),
+  ],
 }

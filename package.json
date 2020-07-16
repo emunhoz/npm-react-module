@@ -2,9 +2,12 @@
   "name": "@your-name/components",
   "version": "1.0.0",
   "description": "Component Library",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "jsnext:main": "build/index.es.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "standard",
@@ -25,12 +28,6 @@
     "@semantic-release/npm",
     "@semantic-release/git"
   ],
-  "keywords": [],
-  "author": {
-    "name": "Your Name",
-    "email": "your_email@email.com",
-    "url": "https://yourwebsite.com"
-  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -91,13 +88,13 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "testPathIgnorePatterns": [
-      "build/"
+      "dist/"
     ]
   },
   "standard": {
     "ignore": [
       "node_modules/",
-      "build/"
+      "dist/"
     ],
     "globals": [
       "describe",
@@ -107,8 +104,5 @@
       "afterAll",
       "jest"
     ]
-  },
-  "dependencies": {
-    "storybook-npm": "^1.1.1"
   }
 }
