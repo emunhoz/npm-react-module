@@ -1,5 +1,7 @@
 ## Template for NPM React Module + TypeScript
 
+![Deploy Storybook](https://github.com/emunhoz/npm-react-module/workflows/Deploy%20Storybook/badge.svg)
+
 #### About
 
 A simple boilerplate to start building your own react library
