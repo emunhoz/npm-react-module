@@ -4,19 +4,6 @@
 
 A simple boilerplate to start building your own react library
 
-## 🚀 Quick Start
-
-1. Install all dependencies
-
-   ```shell
-   npm i
-   ```
-2. Show and build your components at `http://localhost:61622/`
-
-   ```shell
-   npm run storybook
-   ```
-
 What's included?
 
 - [x] React
@@ -24,30 +11,82 @@ What's included?
 - [x] Styled components with ThemeProvider 💅
 - [x] Storybook with MDX Syntax
 - [x] Testing library/react (Setup working with ThemeProvider)
+- [x] Semantic release with commit-analyzer 
+
+## 🛠 Setup
+
+1. Clone this repo _(do not install all dependencies in this step)_
+2. In `package.json` change `"name": "your-name-example"` to your lib name. Ex: `my-new-lib`
+3. In `package.json` change the current version in `"version": "x.x.x"` to `"version": "0.0.0-development"`
+4. Install all dependencies with `npm install`
 
 ## 🌎 Publishing
 
-_Remember to rename `"name": "@your-name/components",` with your package name in `package.json`_
+1. Create your Github repository: https://github.com/new
+2. Link local repository to Github repository:
 
-1.  Make sure you're logged in your npm account
-    ```shell
-    npm login
-    ```
+```
+git remote add origin git@github.com:<username>/<repository-name>.git
+git push -u origin master
+```
 
-2. Compile your package
-    ```shell
-    npm run build
-    ```
+In the next step we need to get Github and NPM tokens. This is needed in order for Semantic Release to be able to publish a new release for the Github repository and for the NPM registry.
 
-3. Update the package version
-    ```shell
-    npm version [patch | minor | major]
-    ```
+3. [Create a token for Github](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line). You need to give the token repo scope permissions.
 
-4. Publish your package
-    ```shell
-    npm publish
-    ```
+4. [Create a token in NPM](https://docs.npmjs.com/creating-and-viewing-authentication-tokens). You need to give the token Read and Publish access level.
+
+Once you have the two tokens, you have to set them in your repository secrets config:
+
+```
+https://github.com/<username>/<repositoryname>/settings/secrets
+```
+
+Use `GH_TOKEN` and `NPM_TOKEN` as the secret names.
+
+5. Create a new component with `npm run generate:component`. For example a Title component:
+
+```
+? What is your component name? Title => Type your component name here
+✔  ++ /src/components/title/Title.tsx
+✔  ++ /src/components/title/__tests__/Title.test.tsx
+✔  ++ /src/components/title/styled.ts
+✔  ++ /src/components/title/Title.stories.mdx
+✔  ++ /src/components/title/index.ts
+```
+
+6. Add your new component at `src/index.ts`. For ex:
+```
+export { ThemeProvider } from 'styled-components'
+export { default as theme, GlobalStyles } from './styles'
+
+export * from './components/button'
+export * from './components/title'
+```
+
+7. Commit and push changes
+
+```
+git add .
+git commit -m "feat: add title component"
+git push
+```
+
+8. If everything went well, you should see in the action results that every step was succesfully executed.
+
+## 🚀 Development mode
+
+1. Install all dependencies
+
+   ```shell
+   npm i
+   ```
+
+2. Show and build your components at `http://localhost:61622/`
+
+   ```shell
+   npm run storybook
+   ```
 
 ## 🚨 Code standard
 
