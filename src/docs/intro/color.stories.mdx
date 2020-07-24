@@ -1,0 +1,36 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
+
+import { palette } from '../../styles/create-palette'
+
+<Meta title="Introduction/Colors" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem title="theme.palette.primary" subtitle="Main" colors={[palette.primary]} />
+  <ColorItem title="theme.palette.secondary" subtitle="Blue water" colors={[palette.secondary]} />
+  <ColorItem title="theme.palette.tertiary" subtitle="Grey" colors={[palette.tertiary]} />
+  <ColorItem title="theme.palette.positive" subtitle="Green" colors={[palette.positive]} />
+  <ColorItem title="theme.palette.warning" subtitle="Ochre" colors={[palette.warning]} />
+  <ColorItem title="theme.palette.negative" subtitle="Red" colors={[palette.negative]} />
+  <ColorItem title="theme.palette.orange" subtitle="Orange" colors={[palette.orange]} />
+  <ColorItem title="theme.palette.gold" subtitle="Gold" colors={[palette.gold]} />
+  <ColorItem title="theme.palette.green" subtitle="Green" colors={[palette.green]} />
+  <ColorItem title="theme.palette.seafoam" subtitle="Seafoam" colors={[palette.seafoam]} />
+  <ColorItem title="theme.palette.purple" subtitle="Purple" colors={[palette.purple]} />
+  <ColorItem title="theme.palette.ultraviolet" subtitle="Ultraviolet" colors={[palette.ultraviolet]} />
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      palette.darkest,
+      palette.darker,
+      palette.dark,
+      palette.mediumdark,
+      palette.medium,
+      palette.mediumlight,
+      palette.light,
+      palette.lighter,
+      palette.lightest,
+    ]}
+  />
+</ColorPalette>
