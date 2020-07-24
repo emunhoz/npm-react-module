@@ -1,33 +1,62 @@
 export interface Palette {
   primary: string
   secondary: string
-  white: string
-  black: string
-  lightGray: string
-  error: string
-  lightError: string
+  tertiary: string
+
+  orange: string
+  gold: string
+  green: string
+  seafoam: string
+  purple: string
+  ultraviolet: string
+
+  // Monochrome
+  lightest: string
+  lighter: string
+  light: string
+  mediumlight: string
+  medium: string
+  mediumdark: string
+  dark: string
+  darker: string
+  darkest: string
+
+  border: string
+
+  // Status
+  positive: string
+  negative: string
+  warning: string
 }
 
-export type PaletteInput = {
-  +readonly [K in keyof Palette]+?: Palette[K]
+export const palette: Palette = {
+  // Palette
+  primary: '#7264d6',
+  secondary: '#1EA7FD', // ocean
+  tertiary: '#DDDDDD',
+
+  orange: '#FC521F',
+  gold: '#FFAE00',
+  green: '#66BF3C',
+  seafoam: '#37D5D3',
+  purple: '#6F2CAC',
+  ultraviolet: '#2A0481',
+
+  // Monochrome
+  lightest: '#FFFFFF',
+  lighter: '#F8F8F8',
+  light: '#F3F3F3',
+  mediumlight: '#EEEEEE',
+  medium: '#DDDDDD',
+  mediumdark: '#999999',
+  dark: '#666666',
+  darker: '#444444',
+  darkest: '#333333',
+
+  border: 'rgba(0,0,0,.1)',
+
+  // Status
+  positive: '#66BF3C',
+  negative: '#FF4400',
+  warning: '#E69D00',
 }
-
-const createPalette = ({
-  primary = '#7264d6',
-  secondary = '#dfdded',
-  white = '#fff',
-  black = '#1f1f25',
-  lightGray = '#f4f4f4',
-  error = '#ff6e6e',
-  lightError = '#ff6e6e',
-}: PaletteInput): Palette => ({
-  primary,
-  secondary,
-  white,
-  black,
-  lightGray,
-  error,
-  lightError,
-})
-
-export default createPalette
