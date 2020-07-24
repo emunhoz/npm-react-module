@@ -1,8 +1,8 @@
-name: Semantic release
+name: Deploy Storybook
 
 on: push
 jobs:
-  publish:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,4 +15,6 @@ jobs:
       - name: Build app
         run: npm run build
       - name: Deploy Storybook
-        run: npm run deploy-storybook
+        run: npm run deploy-storybook -- --ci
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GH_TOKEN }}
