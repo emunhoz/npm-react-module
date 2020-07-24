@@ -1,4 +1,4 @@
-## Template for NPM React Module + TypeScript
+## Template for NPM React Module + TypeScript <sup>[![Version Badge](http://versionbadg.es/emunhoz/npm-react-module.svg)](https://npmjs.org/package/your-name-example)</sup>
 
 ![Deploy Storybook](https://github.com/emunhoz/npm-react-module/workflows/Deploy%20Storybook/badge.svg)
 
