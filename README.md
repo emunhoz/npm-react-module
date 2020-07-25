@@ -13,7 +13,7 @@ What's included?
 - [x] Styled components with ThemeProvider 💅
 - [x] Storybook with MDX Syntax
 - [x] Testing library/react (Setup working with ThemeProvider)
-- [x] Semantic release with commit-analyzer 
+- [x] Semantic release with commit-analyzer (See more at https://www.conventionalcommits.org/)
 
 ## 🛠 Setup
 
@@ -74,7 +74,7 @@ git commit -m "feat: add title component"
 git push
 ```
 
-8. If everything went well, you should see in the action results that every step was succesfully executed.
+8. If everything went well, you should see in the actions tab results that every step was succesfully executed and your commit describe at `CHANGELOG.md` file.
 
 ## 🚀 Development mode
 
