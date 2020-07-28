@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/emunhoz/npm-react-module/compare/v1.6.0...v1.6.1) (2020-07-28)
+
+
+### Bug Fixes
+
+* react import ([efdd03b](https://github.com/emunhoz/npm-react-module/commit/efdd03bde8b4379bfef5d3f37957acf729f1a636))
+
 # [1.6.0](https://github.com/emunhoz/npm-react-module/compare/v1.5.0...v1.6.0) (2020-07-28)
 
 
