@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/emunhoz/npm-react-module/compare/v1.5.0...v1.6.0) (2020-07-28)
+
+
+### Features
+
+* update package json ([92a6793](https://github.com/emunhoz/npm-react-module/commit/92a67938dd33b0724e0bd0e6dcea357421042689))
+
 # [1.5.0](https://github.com/emunhoz/npm-react-module/compare/v1.4.0...v1.5.0) (2020-07-28)
 
 
