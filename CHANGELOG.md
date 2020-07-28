@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/emunhoz/npm-react-module/compare/v1.4.0...v1.5.0) (2020-07-28)
+
+
+### Features
+
+* import React instead of * ([c77c9eb](https://github.com/emunhoz/npm-react-module/commit/c77c9eb434b6c206ced659338375b0b779e47bb1))
+
 # [1.4.0](https://github.com/emunhoz/npm-react-module/compare/v1.3.0...v1.4.0) (2020-07-24)
 
 
