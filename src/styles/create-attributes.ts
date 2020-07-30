@@ -1,4 +1,4 @@
-export type Attributes = {
+export interface Attributes {
   borderRadius: {
     small: number
     default: number
@@ -10,16 +10,27 @@ export type Attributes = {
   }
 }
 
-const attributes: Attributes = {
-  borderRadius: {
-    small: 5,
-    default: 10,
-    big: 20,
-  },
-  boxShadow: {
-    small: '0 0 46px 0 rgba(0, 0, 0, 0.13)',
-    hover: '0 0 15px 0 rgba(0, 0, 0, 0.13)',
-  },
+export type AttributesInput = {
+  +readonly [K in keyof Attributes]+?: Attributes[K]
 }
 
-export default attributes
+const createAttributes = (attributes: AttributesInput): Attributes => {
+  const {
+    borderRadius = {
+      small: 5,
+      default: 10,
+      big: 20,
+    },
+    boxShadow = {
+      small: '0 0 46px 0 rgba(0, 0, 0, 0.13)',
+      hover: '0 0 15px 0 rgba(0, 0, 0, 0.13)',
+    },
+  } = attributes
+
+  return {
+    borderRadius,
+    boxShadow,
+  }
+}
+
+export default createAttributes
