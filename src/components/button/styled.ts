@@ -13,7 +13,7 @@ const NegativeStyle = css`
 export const Button = styled.button<{ negative: boolean }>`
   min-width: 320px;
   padding: 24px 40px;
-  font-size: ${({ theme }) => `${theme.typography.size.s3}px`};
+  font-size: ${({ theme }) => theme.typography.size.s3}px;
   font-weight: ${({ theme }) => theme.typography.weight.bold};
   color: ${({ theme }) => theme.palette.lightest};
   cursor: pointer;
