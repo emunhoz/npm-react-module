@@ -1,36 +1,37 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
 
 import { palette } from '../../styles/create-palette'
+import createTheme from '../../styles'
 
 <Meta title="Introduction/Colors" />
 
 # Colors
 
 <ColorPalette>
-  <ColorItem title="theme.palette.primary" subtitle="Main" colors={[palette.primary]} />
-  <ColorItem title="theme.palette.secondary" subtitle="Blue water" colors={[palette.secondary]} />
-  <ColorItem title="theme.palette.tertiary" subtitle="Grey" colors={[palette.tertiary]} />
-  <ColorItem title="theme.palette.positive" subtitle="Green" colors={[palette.positive]} />
-  <ColorItem title="theme.palette.warning" subtitle="Ochre" colors={[palette.warning]} />
-  <ColorItem title="theme.palette.negative" subtitle="Red" colors={[palette.negative]} />
-  <ColorItem title="theme.palette.orange" subtitle="Orange" colors={[palette.orange]} />
-  <ColorItem title="theme.palette.gold" subtitle="Gold" colors={[palette.gold]} />
-  <ColorItem title="theme.palette.green" subtitle="Green" colors={[palette.green]} />
-  <ColorItem title="theme.palette.seafoam" subtitle="Seafoam" colors={[palette.seafoam]} />
-  <ColorItem title="theme.palette.purple" subtitle="Purple" colors={[palette.purple]} />
-  <ColorItem title="theme.palette.ultraviolet" subtitle="Ultraviolet" colors={[palette.ultraviolet]} />
+  <ColorItem title="theme.palette.primary" subtitle="Main" colors={[createTheme.palette.primary]} />
+  <ColorItem title="theme.palette.secondary" subtitle="Blue water" colors={[createTheme.palette.secondary]} />
+  <ColorItem title="theme.palette.tertiary" subtitle="Grey" colors={[createTheme.palette.tertiary]} />
+  <ColorItem title="theme.palette.positive" subtitle="Green" colors={[createTheme.palette.positive]} />
+  <ColorItem title="theme.palette.warning" subtitle="Ochre" colors={[createTheme.palette.warning]} />
+  <ColorItem title="theme.palette.negative" subtitle="Red" colors={[createTheme.palette.negative]} />
+  <ColorItem title="theme.palette.orange" subtitle="Orange" colors={[createTheme.palette.orange]} />
+  <ColorItem title="theme.palette.gold" subtitle="Gold" colors={[createTheme.palette.gold]} />
+  <ColorItem title="theme.palette.green" subtitle="Green" colors={[createTheme.palette.green]} />
+  <ColorItem title="theme.palette.seafoam" subtitle="Seafoam" colors={[createTheme.palette.seafoam]} />
+  <ColorItem title="theme.palette.purple" subtitle="Purple" colors={[createTheme.palette.purple]} />
+  <ColorItem title="theme.palette.ultraviolet" subtitle="Ultraviolet" colors={[createTheme.palette.ultraviolet]} />
   <ColorItem
     title="Monochrome"
     colors={[
-      palette.darkest,
-      palette.darker,
-      palette.dark,
-      palette.mediumdark,
-      palette.medium,
-      palette.mediumlight,
-      palette.light,
-      palette.lighter,
-      palette.lightest,
+      createTheme.palette.darkest,
+      createTheme.palette.darker,
+      createTheme.palette.dark,
+      createTheme.palette.mediumdark,
+      createTheme.palette.medium,
+      createTheme.palette.mediumlight,
+      createTheme.palette.light,
+      createTheme.palette.lighter,
+      createTheme.palette.lightest,
     ]}
   />
 </ColorPalette>
