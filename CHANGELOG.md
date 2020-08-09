@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/emunhoz/npm-react-module/compare/v1.6.4...v1.6.5) (2020-08-09)
+
+
+### Bug Fixes
+
+* **refactor:** structure files ([6bf32a6](https://github.com/emunhoz/npm-react-module/commit/6bf32a6e446ef4b649560d8b97699f8070486264))
+
 ## [1.6.4](https://github.com/emunhoz/npm-react-module/compare/v1.6.3...v1.6.4) (2020-08-09)
 
 
