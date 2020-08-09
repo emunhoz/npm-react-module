@@ -31,7 +31,7 @@ What's included?
 1. Create your Github repository: https://github.com/new
 2. Link local repository to Github repository:
 
-```
+```shell
 git remote add origin git@github.com:<username>/<repository-name>.git
 git push -u origin master
 ```
@@ -44,7 +44,7 @@ In the next step we need to get Github and NPM tokens. This is needed in order f
 
 Once you have the two tokens, you have to set them in your repository secrets config:
 
-```
+```shell
 https://github.com/<username>/<repositoryname>/settings/secrets
 ```
 
@@ -52,7 +52,7 @@ Use `GH_TOKEN` and `NPM_TOKEN` as the secret names.
 
 5. Create a new component with `npm run generate:component`. For example a Title component:
 
-```
+```shell
 ? What is your component name? Title => Type your component name here
 ✔  ++ /src/components/title/Title.tsx
 ✔  ++ /src/components/title/__tests__/Title.test.tsx
@@ -62,7 +62,8 @@ Use `GH_TOKEN` and `NPM_TOKEN` as the secret names.
 ```
 
 6. Add your new component at `src/index.ts`. For ex:
-```
+
+```js
 export { ThemeProvider } from 'styled-components'
 export { default as theme, GlobalStyles } from './styles'
 
@@ -72,7 +73,7 @@ export * from './components/title'
 
 7. Commit and push changes
 
-```
+```shell
 git add .
 git commit -m "feat: add title component"
 git push
