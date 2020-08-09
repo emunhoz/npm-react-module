@@ -1,31 +1,31 @@
 import createPalette, { Palette, PaletteInput } from './create-palette'
-import createAttributes, { Attributes, AttributesInput } from './create-attributes'
 import createTypography, { Typography, TypographyInput } from './create-typography'
+import fontWeight, { FontWeight } from './weights'
+import fontSize, { FontSize } from './sizes'
 
 export interface Theme {
   palette: Palette
   typography: Typography
-  attributes: Attributes
+  fontSize: FontSize
+  fontWeight: FontWeight
 }
 
 export interface ThemeInput {
   palette?: PaletteInput
   typography?: TypographyInput
-  attributes?: AttributesInput
 }
 
 export const createTheme = (options: ThemeInput): Theme => {
-  const { palette: paletteInput = {}, typography: typographyInput = {}, attributes: attributesInput = {} } =
-    options || {}
+  const { palette: paletteInput = {}, typography: typographyInput = {} } = options || {}
 
   const palette = createPalette(paletteInput)
   const typography = createTypography(typographyInput)
-  const attributes = createAttributes(attributesInput)
 
   return {
     palette,
+    fontSize,
     typography,
-    attributes,
+    fontWeight,
   }
 }
 
