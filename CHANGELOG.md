@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/emunhoz/npm-react-module/compare/v1.6.1...v1.6.2) (2020-07-30)
+
+
+### Bug Fixes
+
+* export theme variables ([22a4c8a](https://github.com/emunhoz/npm-react-module/commit/22a4c8afc3d94aa6245f918557d4e54272ee610b))
+
 ## [1.6.1](https://github.com/emunhoz/npm-react-module/compare/v1.6.0...v1.6.1) (2020-07-28)
 
 
