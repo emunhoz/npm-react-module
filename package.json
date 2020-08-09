@@ -2,14 +2,15 @@
   "name": "your-name-example",
   "version": "1.6.3",
   "description": "Component Library",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
-  "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
+    "build-watch": "rollup -c -w",
     "lint": "standard",
     "format": "prettier-standard --format",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -103,7 +104,8 @@
   },
   "peerDependencies": {
     "react": "^16",
-    "react-dom": "^16"
+    "react-dom": "^16",
+    "styled-components": "^5.1.1"
   },
   "jest": {
     "preset": "ts-jest",
