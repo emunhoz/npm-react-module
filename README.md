@@ -80,6 +80,22 @@ git push
 
 8. If everything went well, you should see in the actions tab results that every step was succesfully executed and your commit describe at `CHANGELOG.md` file.
 
+## 🧩 How to use your new library
+
+```js
+import { ThemeProvider } from 'styled-components'
+import { theme } from 'your-name-example'
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <Button>My button from npm-react-module</Button>
+    </ThemeProvider>
+  );
+}
+
+```
+
 ## 🚀 Development mode
 
 1. Install all dependencies
