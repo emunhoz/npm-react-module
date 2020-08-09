@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/emunhoz/npm-react-module/compare/v1.6.3...v1.6.4) (2020-08-09)
+
+
+### Bug Fixes
+
+* **dependencies:** build project ([8b06817](https://github.com/emunhoz/npm-react-module/commit/8b068175917550b2985a7f63f1545349f8b36d78))
+
 ## [1.6.3](https://github.com/emunhoz/npm-react-module/compare/v1.6.2...v1.6.3) (2020-08-09)
 
 
