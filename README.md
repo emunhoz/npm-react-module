@@ -85,7 +85,7 @@ git push
 
 ```js
 import { ThemeProvider } from 'styled-components'
-import { theme } from 'your-name-example'
+import { Button, theme } from 'your-name-example'
 
 function App() {
   return (
