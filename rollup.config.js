@@ -7,7 +7,7 @@ import pkg from './package.json'
 
 export default {
   input: 'src/index.ts',
-  external: ['styled-components'],
+  external: 'styled-components',
   output: [
     {
       file: pkg.main,
