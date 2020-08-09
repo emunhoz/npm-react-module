@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/emunhoz/npm-react-module/compare/v1.6.2...v1.6.3) (2020-08-09)
+
+
+### Bug Fixes
+
+* style vars update ([75d065c](https://github.com/emunhoz/npm-react-module/commit/75d065c944bea7980358e077c19548bd7a743c24))
+
 ## [1.6.2](https://github.com/emunhoz/npm-react-module/compare/v1.6.1...v1.6.2) (2020-07-30)
 
 

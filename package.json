@@ -1,6 +1,6 @@
 {
   "name": "your-name-example",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Component Library",
   "main": "dist/index.js",
   "files": [
