@@ -2,7 +2,7 @@ import React from 'react'
 import { addDecorator } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import createTheme, { GlobalStyles } from '../src/styles'
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components'
 
 const styles = {
   textAlign: 'center',
