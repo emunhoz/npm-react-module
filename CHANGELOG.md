@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/emunhoz/npm-react-module/compare/v1.6.5...v1.7.0) (2020-12-14)
+
+
+### Features
+
+* update package dependencies ([a8c761c](https://github.com/emunhoz/npm-react-module/commit/a8c761c081a22c82d05c6e78fe2cde4688b30b43))
+
 ## [1.6.5](https://github.com/emunhoz/npm-react-module/compare/v1.6.4...v1.6.5) (2020-08-09)
 
 
